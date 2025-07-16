@@ -4,7 +4,7 @@ from selenium import webdriver
 
 def pytest_addoption(parser):
     parser.addoption('--browser_name', action='store', default='Chrome', help='Choose browser: Chrome, Firefox, Edge')
-    parser.addoption('--language', action='store', default='ru, en', help='Language')
+    parser.addoption('--language', action='store', default='en', help='Language')
 
 @pytest.fixture(scope='function')
 def browser(request):
